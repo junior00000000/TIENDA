@@ -1,0 +1,173 @@
+/* =========================================================
+   RESPONSIVE
+   TIENDA GYM
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .nav {
+        gap: 15px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: 400px;
+    }
+
+    .categories {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    .header {
+        height: 68px;
+    }
+
+    .header-container {
+        width: 90%;
+    }
+
+    .logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+
+        top: 68px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        background: rgba(8, 8, 8, 0.98);
+
+        border-bottom: 1px solid rgba(168, 85, 247, 0.15);
+
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 12px 5px;
+    }
+
+    .nav a::after {
+        bottom: 4px;
+    }
+
+    .nav-pedido {
+        text-align: center;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+
+        padding-top: 120px;
+        padding-bottom: 70px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 15vw, 5rem);
+
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-visual {
+        min-height: 360px;
+    }
+
+    .hero-card {
+        width: 85%;
+    }
+
+    .hero-card-content h2 {
+        font-size: 1.6rem;
+    }
+
+    /* SECCIONES */
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-card {
+        width: 95%;
+    }
+
+    .category-card {
+        min-height: 210px;
+    }
+}
