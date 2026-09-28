@@ -171,3 +171,726 @@
         min-height: 210px;
     }
 }
+/* =========================================================
+   GYM STORE
+   MENÚ MÓVIL - CORRECCIÓN DEFINITIVA
+   COMPATIBLE CON BOOTSTRAP
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ==========================================
+       HEADER
+       ========================================== */
+
+    .header {
+        position: fixed !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+
+        height: 70px !important;
+
+        z-index: 10000 !important;
+
+        background:
+            rgba(8, 8, 11, 0.97) !important;
+
+        border-bottom:
+            1px solid
+            rgba(168, 85, 247, 0.18) !important;
+
+        backdrop-filter:
+            blur(14px) !important;
+    }
+
+
+    .header-container {
+
+        width: 100% !important;
+
+        height: 70px !important;
+
+        padding:
+            0 18px !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        justify-content: space-between !important;
+    }
+
+
+    /* ==========================================
+       LOGO
+       ========================================== */
+
+    .header .logo {
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        gap: 7px !important;
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        text-decoration: none !important;
+    }
+
+
+    .header .logo img {
+
+        width: 35px !important;
+
+        height: 35px !important;
+
+        object-fit: contain !important;
+    }
+
+
+    .header .logo-text {
+
+        color:
+            #ffffff !important;
+
+        font-size:
+            0.95rem !important;
+
+        font-weight:
+            900 !important;
+
+        white-space:
+            nowrap !important;
+    }
+
+
+    .header .logo-text span {
+
+        color:
+            #a855f7 !important;
+    }
+
+
+    /* ==========================================
+       BOTÓN HAMBURGUESA
+       ========================================== */
+
+    .menu-toggle {
+
+        width:
+            42px !important;
+
+        height:
+            42px !important;
+
+        padding:
+            0 !important;
+
+        display:
+            flex !important;
+
+        align-items:
+            center !important;
+
+        justify-content:
+            center !important;
+
+        border:
+            1px solid
+            rgba(255,255,255,0.35) !important;
+
+        border-radius:
+            10px !important;
+
+        background:
+            #111116 !important;
+
+        color:
+            #ffffff !important;
+
+        font-size:
+            0 !important;
+
+        line-height:
+            1 !important;
+
+        cursor:
+            pointer !important;
+
+        z-index:
+            10002 !important;
+    }
+
+
+    /* ==========================================
+       HAMBURGUESA
+       ========================================== */
+
+    .menu-toggle::before {
+
+        content:
+            "☰";
+
+        font-size:
+            22px;
+
+        color:
+            #ffffff;
+
+        line-height:
+            1;
+    }
+
+
+    /* ==========================================
+       BOTÓN CUANDO ESTÁ ABIERTO
+       ========================================== */
+
+    .menu-toggle.active::before {
+
+        content:
+            "✕";
+
+        font-size:
+            21px;
+    }
+
+
+    /* ==========================================
+       MENÚ
+       IMPORTANTE:
+       Bootstrap .nav queda ANULADO aquí
+       ========================================== */
+
+    .header .nav {
+
+        position:
+            fixed !important;
+
+        top:
+            76px !important;
+
+        left:
+            14px !important;
+
+        right:
+            14px !important;
+
+        width:
+            auto !important;
+
+        height:
+            auto !important;
+
+        max-height:
+            none !important;
+
+        padding:
+            8px !important;
+
+        margin:
+            0 !important;
+
+        display:
+            flex !important;
+
+        flex-direction:
+            column !important;
+
+        flex-wrap:
+            nowrap !important;
+
+        align-items:
+            stretch !important;
+
+        gap:
+            2px !important;
+
+        overflow:
+            hidden !important;
+
+        border:
+            1px solid
+            rgba(168,85,247,0.30) !important;
+
+        border-radius:
+            14px !important;
+
+        background:
+            linear-gradient(
+                145deg,
+                #15151b,
+                #09090c
+            ) !important;
+
+        box-shadow:
+            0 20px 45px
+            rgba(0,0,0,0.65) !important;
+
+        opacity:
+            0 !important;
+
+        visibility:
+            hidden !important;
+
+        pointer-events:
+            none !important;
+
+        transform:
+            translateY(-8px) !important;
+
+        transition:
+            opacity .2s ease,
+            transform .2s ease,
+            visibility .2s ease !important;
+    }
+
+
+    /* ==========================================
+       MENÚ ABIERTO
+       ========================================== */
+
+    .header .nav.active {
+
+        opacity:
+            1 !important;
+
+        visibility:
+            visible !important;
+
+        pointer-events:
+            auto !important;
+
+        transform:
+            translateY(0) !important;
+    }
+
+
+    /* ==========================================
+       ENLACES
+       ========================================== */
+
+    .header .nav > a {
+
+        display:
+            flex !important;
+
+        align-items:
+            center !important;
+
+        justify-content:
+            flex-start !important;
+
+        width:
+            100% !important;
+
+        min-height:
+            38px !important;
+
+        height:
+            38px !important;
+
+        margin:
+            0 !important;
+
+        padding:
+            0 13px !important;
+
+        border:
+            none !important;
+
+        border-radius:
+            8px !important;
+
+        background:
+            transparent !important;
+
+        color:
+            #eeeeee !important;
+
+        font-size:
+            0.78rem !important;
+
+        font-weight:
+            700 !important;
+
+        line-height:
+            1 !important;
+
+        text-decoration:
+            none !important;
+
+        white-space:
+            nowrap !important;
+    }
+
+
+    .header .nav > a:hover {
+
+        background:
+            rgba(168,85,247,0.10) !important;
+
+        color:
+            #ffffff !important;
+    }
+
+
+    /* ==========================================
+       PEDIDO
+       ========================================== */
+
+    .header .nav > .nav-pedido {
+
+        justify-content:
+            center !important;
+
+        margin-top:
+            5px !important;
+
+        border:
+            1px solid
+            #7b2cff !important;
+
+        background:
+            rgba(123,44,255,0.08) !important;
+
+        color:
+            #ffffff !important;
+    }
+
+
+    .header .nav > .nav-pedido:hover {
+
+        background:
+            rgba(123,44,255,0.18) !important;
+    }
+
+
+    /* ==========================================
+       CONTENIDO
+       ========================================== */
+
+    .catalogo-page {
+
+        padding-top:
+            92px !important;
+    }
+}
+
+
+/* =========================================================
+   TELÉFONOS PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .header-container {
+
+        padding:
+            0 14px !important;
+    }
+
+
+    .header .logo img {
+
+        width:
+            32px !important;
+
+        height:
+            32px !important;
+    }
+
+
+    .header .logo-text {
+
+        font-size:
+            0.88rem !important;
+    }
+
+
+    .header .nav {
+
+        left:
+            10px !important;
+
+        right:
+            10px !important;
+
+        top:
+            74px !important;
+    }
+
+
+    .header .nav > a {
+
+        min-height:
+            36px !important;
+
+        height:
+            36px !important;
+
+        font-size:
+            0.75rem !important;
+    }
+}
+/* =========================================================
+   GYM STORE
+   FOOTER RESPONSIVE FINAL
+   ========================================================= */
+
+/* ---------- FOOTER BASE ---------- */
+
+.footer {
+    width: 100%;
+    margin: 0 !important;
+    padding: 45px 0 20px !important;
+
+    background: #08080b !important;
+
+    border-top: none !important;
+}
+
+
+/* Contenedor */
+
+.footer-container {
+    width: min(1100px, calc(100% - 50px));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 45px;
+}
+
+
+/* ---------- MARCA ---------- */
+
+.footer-brand {
+    min-width: 0;
+}
+
+.footer .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 0 0 14px;
+
+    text-decoration: none;
+}
+
+.footer .logo img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+}
+
+.footer .logo-text {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 900;
+}
+
+.footer .logo-text span {
+    color: #a855f7;
+}
+
+.footer-brand p {
+    margin: 4px 0;
+
+    color: #9ca3af;
+
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+
+/* ---------- COLUMNAS ---------- */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.footer-column h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-size: 0.82rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.footer-column a,
+.footer-column p {
+    margin: 0;
+
+    color: #9ca3af;
+
+    font-size: 0.82rem;
+    line-height: 1.4;
+
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #a855f7;
+}
+
+
+/* ---------- COPYRIGHT ---------- */
+
+.footer-bottom {
+    width: min(1100px, calc(100% - 50px));
+
+    margin: 30px auto 0 !important;
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255,255,255,0.06) !important;
+
+    color: #666670;
+
+    text-align: center;
+
+    font-size: 0.72rem;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .footer-container {
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 30px 0 15px !important;
+    }
+
+
+    .footer-container {
+        width: calc(100% - 32px);
+
+        display: grid;
+
+        /* Marca arriba */
+        grid-template-columns: 1fr 1fr;
+
+        gap: 24px 18px;
+
+        align-items: start;
+    }
+
+
+    /* Marca ocupa todo el ancho */
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+
+    .footer .logo {
+        margin-bottom: 8px;
+    }
+
+
+    .footer .logo img {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .footer .logo-text {
+        font-size: 0.95rem;
+    }
+
+
+    .footer-brand p {
+        font-size: 0.76rem;
+        line-height: 1.35;
+    }
+
+
+    /* TIENDA Y PEDIDO JUNTOS */
+
+    .footer-column {
+        gap: 5px;
+    }
+
+
+    .footer-column h3 {
+        margin-bottom: 7px;
+
+        font-size: 0.78rem;
+    }
+
+
+    .footer-column a,
+    .footer-column p {
+        font-size: 0.76rem;
+        line-height: 1.35;
+    }
+
+
+    /* Copyright */
+
+    .footer-bottom {
+        width: calc(100% - 32px);
+
+        margin-top: 24px !important;
+        padding-top: 14px;
+
+        font-size: 0.68rem;
+    }
+}
+
+
+/* =========================================================
+   TELÉFONOS MUY PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .footer-container {
+        width: calc(100% - 24px);
+
+        gap: 20px 14px;
+    }
+
+    .footer-brand p {
+        font-size: 0.72rem;
+    }
+
+    .footer-column a,
+    .footer-column p {
+        font-size: 0.72rem;
+    }
+
+    .footer-bottom {
+        width: calc(100% - 24px);
+        font-size: 0.64rem;
+    }
+}
